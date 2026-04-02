@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Test your accessibility knowledge with our interactive game. Identify accessible vs. inaccessible UI patterns and learn WCAG best practices." />
+  <title>Interactive Game — UCF Digital Accessibility</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♿</text></svg>" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility Home">
+        <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+        <div class="nav-logo-text">Digital<br><span>Accessibility</span></div>
+      </a>
+      <nav role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-header">
+      <div class="page-header-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Interactive Game</span>
+        </nav>
+        <h1>Accessibility <em>Challenge</em></h1>
+        <p>Can you identify the most accessible option? 8 questions covering real-world WCAG principles. Learn as you play.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="game-heading">
+      <div class="container">
+
+        <!-- Pre-game info strip -->
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem;" class="fade-in" aria-label="Game details">
+          <div style="display:flex;align-items:center;gap:.6rem;background:var(--navy-light);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;color:var(--navy);">
+            <span aria-hidden="true">🎯</span> 8 Questions
+          </div>
+          <div style="display:flex;align-items:center;gap:.6rem;background:var(--navy-light);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;color:var(--navy);">
+            <span aria-hidden="true">⚡</span> Instant Feedback
+          </div>
+          <div style="display:flex;align-items:center;gap:.6rem;background:var(--navy-light);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;color:var(--navy);">
+            <span aria-hidden="true">📚</span> Detailed Explanations
+          </div>
+          <div style="display:flex;align-items:center;gap:.6rem;background:var(--navy-light);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;color:var(--navy);">
+            <span aria-hidden="true">🏆</span> Earn Your Badge
+          </div>
+        </div>
+
+        <h2 id="game-heading" class="visually-hidden">Accessibility Quiz Game</h2>
+
+        <!-- Game container — JS populates this -->
+        <div id="accessibility-game" class="game-wrapper" role="main" aria-live="polite" aria-label="Accessibility quiz">
+          <!-- Loading state -->
+          <div style="text-align:center;padding:4rem 2rem;color:var(--gray-600);">
+            <div style="font-size:3rem;margin-bottom:1rem;" aria-hidden="true">🎮</div>
+            <p style="font-size:1.1rem;">Loading your quiz…</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How the game works -->
+    <section class="section bg-gray" aria-labelledby="howto-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">How to Play</span>
+          <h2 id="howto-heading">Game Instructions</h2>
+        </div>
+        <div class="cards-grid" style="max-width:860px;margin:0 auto;">
+          <div class="card fade-in">
+            <div class="card-icon" aria-hidden="true">1️⃣</div>
+            <h3>Read the Scenario</h3>
+            <p>Each question presents a real-world development scenario and three different code or design options.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card-icon" aria-hidden="true">2️⃣</div>
+            <h3>Choose Your Answer</h3>
+            <p>Click or tap the option you believe best follows WCAG accessibility guidelines. You can use keyboard navigation too.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="card-icon" aria-hidden="true">3️⃣</div>
+            <h3>Learn & Advance</h3>
+            <p>See instant feedback with a detailed explanation of why the correct answer is more accessible. Then move to the next question.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics covered -->
+    <section class="section" aria-labelledby="topics-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Topics Covered</span>
+          <h2 id="topics-heading">What This Quiz Tests</h2>
+          <p>The game covers 8 core accessibility topics drawn directly from WCAG 2.2 success criteria.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:760px;margin:0 auto;" class="fade-in" role="list" aria-label="Quiz topics">
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">🔘 Button Semantics</div>
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">🖼️ Image Alt Text</div>
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">🎨 Color Contrast</div>
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">📝 Form Labels</div>
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">📐 Heading Structure</div>
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">🔗 Link Text</div>
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">🎬 Video Captions</div>
+          <div role="listitem" style="background:var(--navy);color:var(--white);padding:.6rem 1.25rem;border-radius:100px;font-size:.85rem;font-weight:600;">⌨️ Keyboard Navigation</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility">
+          <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+          <div class="nav-logo-text">Digital <span>Accessibility</span></div>
+        </a>
+        <p>An interactive learning platform built by UCF students to promote digital inclusion and WCAG compliance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C WAI</a></li>
+          <li><a href="https://webaim.org/" target="_blank" rel="noopener">WebAIM</a></li>
+          <li><a href="https://www.ada.gov/" target="_blank" rel="noopener">ADA.gov</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 UCF Digital Accessibility.</span>
+      <span>Made with ♿ at <a href="https://www.ucf.edu" target="_blank" rel="noopener">University of Central Florida</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

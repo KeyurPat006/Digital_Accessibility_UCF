@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about digital accessibility, WCAG standards, and inclusive design with UCF's interactive learning platform." />
+  <title>UCF Digital Accessibility — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♿</text></svg>" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility Home">
+        <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+        <div class="nav-logo-text">Digital<br><span>Accessibility</span></div>
+      </a>
+      <nav role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow" aria-hidden="true">
+            ♿ UCF Accessibility Initiative
+          </div>
+          <h1>Design the<br><em>Inclusive</em><br>Web</h1>
+          <p>
+            Discover why digital accessibility matters, learn WCAG standards, and test your knowledge with our interactive game — all built with the inclusive web in mind.
+          </p>
+          <div class="hero-ctas">
+            <a href="accessibility-experiences.html" class="btn btn-primary btn-lg">
+              Play the Game 🎮
+            </a>
+            <a href="about.html" class="btn btn-outline btn-lg">
+              Learn More →
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-icon">📋</div>
+            <div class="hero-card-text">
+              <strong>WCAG 2.2 Compliance</strong>
+              <span>Web Content Accessibility Guidelines</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">🎯</div>
+            <div class="hero-card-text">
+              <strong>Interactive Learning</strong>
+              <span>8 real-world accessibility challenges</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">🌍</div>
+            <div class="hero-card-text">
+              <strong>1 Billion Users</strong>
+              <span>People with disabilities worldwide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section bg-navy" aria-label="Accessibility statistics">
+      <div class="stat-strip container">
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="96" data-suffix="%">96%</div>
+          <div class="stat-label">of top websites have accessibility failures</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="1" data-suffix="B+">1B+</div>
+          <div class="stat-label">people live with a disability globally</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="50" data-suffix="K+">50K+</div>
+          <div class="stat-label">ADA accessibility lawsuits filed yearly</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="4" data-suffix="">4</div>
+          <div class="stat-label">core WCAG principles: POUR</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU'LL LEARN -->
+    <section class="section" aria-labelledby="learn-heading">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">What You'll Learn</span>
+        <h2 id="learn-heading">Your Accessibility Journey</h2>
+        <p>From foundational principles to hands-on practice, this platform gives you everything you need to build a more inclusive web.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card fade-in" aria-label="About accessibility">
+          <div class="card-icon" aria-hidden="true">📖</div>
+          <h3>The Why & What</h3>
+          <p>Understand why accessibility is a legal requirement, a moral responsibility, and a business advantage — not just an afterthought.</p>
+          <a href="about.html" class="btn btn-navy mt-2" style="display:inline-flex;">Explore →</a>
+        </article>
+        <article class="card fade-in" aria-label="Interactive game">
+          <div class="card-icon" aria-hidden="true">🎮</div>
+          <h3>Test Your Knowledge</h3>
+          <p>Play our 8-question interactive game and identify accessible vs. inaccessible UI patterns across real-world scenarios.</p>
+          <a href="accessibility-experiences.html" class="btn btn-navy mt-2" style="display:inline-flex;">Play Now →</a>
+        </article>
+        <article class="card fade-in" aria-label="Developer resources">
+          <div class="card-icon" aria-hidden="true">🛠️</div>
+          <h3>Tools & Resources</h3>
+          <p>Discover industry-leading tools like WAVE, Axe, Lighthouse, and expert guides to audit and fix accessibility in your own projects.</p>
+          <a href="resources.html" class="btn btn-navy mt-2" style="display:inline-flex;">Browse Tools →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- POUR PRINCIPLES -->
+    <section class="section bg-gray" aria-labelledby="pour-heading">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">WCAG Foundation</span>
+        <h2 id="pour-heading">The 4 POUR Principles</h2>
+        <p>Every WCAG guideline maps back to one of four core principles of accessible design.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card fade-in">
+          <div class="card-icon" aria-hidden="true">👁️</div>
+          <h3>Perceivable</h3>
+          <p>Information and UI components must be presentable to users in ways they can perceive — including alt text, captions, and sufficient color contrast.</p>
+        </article>
+        <article class="card fade-in">
+          <div class="card-icon" aria-hidden="true">⌨️</div>
+          <h3>Operable</h3>
+          <p>All functionality must be accessible via keyboard. Users should be able to navigate, activate controls, and avoid time-based traps.</p>
+        </article>
+        <article class="card fade-in">
+          <div class="card-icon" aria-hidden="true">💬</div>
+          <h3>Understandable</h3>
+          <p>Content and controls must be easy to understand. This covers readable language, consistent navigation, and helpful error messages.</p>
+        </article>
+        <article class="card fade-in">
+          <div class="card-icon" aria-hidden="true">🔩</div>
+          <h3>Robust</h3>
+          <p>Content must be interpreted reliably by a wide variety of assistive technologies, including screen readers, braille displays, and voice control.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-gold" aria-label="Call to action">
+      <div class="text-center container">
+        <h2 style="color:var(--navy);" class="fade-in">Ready to Test Your Skills?</h2>
+        <p style="color:rgba(0,44,75,.75);max-width:500px;margin:0 auto 2rem;" class="fade-in">
+          Take our interactive quiz and discover how well you understand the principles of an inclusive web.
+        </p>
+        <a href="accessibility-experiences.html" class="btn btn-navy btn-lg fade-in">
+          Start the Game 🎮
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility">
+          <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+          <div class="nav-logo-text">Digital <span>Accessibility</span></div>
+        </a>
+        <p>An interactive learning platform built by UCF students to promote digital inclusion and WCAG compliance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn More</h4>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C WAI</a></li>
+          <li><a href="https://webaim.org/" target="_blank" rel="noopener">WebAIM</a></li>
+          <li><a href="https://www.ada.gov/" target="_blank" rel="noopener">ADA.gov</a></li>
+          <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE Tool</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 UCF Digital Accessibility. Built for education and inclusion.</span>
+      <span>Made with ♿ and ❤️ at <a href="https://www.ucf.edu" target="_blank" rel="noopener">University of Central Florida</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn why digital accessibility matters, explore WCAG standards, and discover how to fix common accessibility issues." />
+  <title>About — UCF Digital Accessibility</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♿</text></svg>" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility Home">
+        <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+        <div class="nav-logo-text">Digital<br><span>Accessibility</span></div>
+      </a>
+      <nav role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-header">
+      <div class="page-header-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">About</span>
+        </nav>
+        <h1>About <em>Accessibility</em></h1>
+        <p>Understanding why the web must be built for everyone — and what standards guide that goal.</p>
+      </div>
+    </div>
+
+    <!-- WHY IT MATTERS -->
+    <section class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1000px;margin:0 auto;">
+          <div class="fade-in">
+            <span class="section-eyebrow">The Case for Accessibility</span>
+            <h2 id="why-heading" style="text-align:left;">Why It Matters</h2>
+            <p>Digital accessibility ensures that websites, tools, and technologies are designed and developed so that <strong>people with disabilities can use them</strong>. When we build accessibly, we build for everyone.</p>
+            <p>Over <strong>1 billion people worldwide</strong> — about 15% of the global population — live with some form of disability. These include visual, auditory, motor, cognitive, and speech impairments. When digital experiences aren't accessible, these individuals are effectively excluded from modern life.</p>
+            <p>Beyond moral obligation, accessibility is increasingly a <strong>legal requirement</strong>. The Americans with Disabilities Act (ADA), Section 508, and the EU Web Accessibility Directive all mandate digital access for public-facing and government sites.</p>
+          </div>
+          <div class="fade-in" style="display:grid;gap:1rem;">
+            <div class="card" style="border-left:4px solid var(--gold);">
+              <h3>⚖️ Legal Compliance</h3>
+              <p>ADA lawsuits related to web inaccessibility exceeded 4,000 cases in 2023 alone. Compliance protects organizations from costly litigation.</p>
+            </div>
+            <div class="card" style="border-left:4px solid var(--gold);">
+              <h3>💼 Business Impact</h3>
+              <p>The disability market represents over $13 trillion in disposable income globally. Accessible sites reach a wider audience and improve conversion.</p>
+            </div>
+            <div class="card" style="border-left:4px solid var(--gold);">
+              <h3>🔍 SEO Benefits</h3>
+              <p>Many accessibility practices — semantic HTML, alt text, descriptive links — directly improve search engine optimization and page rankings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WCAG STANDARDS -->
+    <section class="section bg-gray" aria-labelledby="wcag-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Standards & Guidelines</span>
+          <h2 id="wcag-heading">WCAG Explained</h2>
+          <p>The Web Content Accessibility Guidelines (WCAG), published by the W3C, are the internationally recognized standard for web accessibility.</p>
+        </div>
+        <div class="wcag-grid fade-in">
+          <div class="wcag-card">
+            <div class="wcag-level">A</div>
+            <h3>Level A — Minimum</h3>
+            <p>The bare minimum for accessibility. Failing Level A criteria creates significant barriers for some users with disabilities. Examples: all non-text content has alt text, no keyboard traps exist.</p>
+          </div>
+          <div class="wcag-card">
+            <div class="wcag-level">AA</div>
+            <h3>Level AA — Standard</h3>
+            <p>The most widely referenced conformance level and the legal target in most regulations. Covers contrast ratios (4.5:1), captions, consistent navigation, and visible focus indicators.</p>
+          </div>
+          <div class="wcag-card">
+            <div class="wcag-level">AAA</div>
+            <h3>Level AAA — Enhanced</h3>
+            <p>The highest level of accessibility, not typically required in full but recommended where feasible. Includes 7:1 contrast ratio, sign language interpretation, and extended audio description.</p>
+          </div>
+          <div class="wcag-card">
+            <div class="wcag-level">2.2</div>
+            <h3>WCAG 2.2 — Latest</h3>
+            <p>Released in 2023, WCAG 2.2 adds 9 new success criteria, focusing on users with cognitive disabilities and mobile users. Key additions include visible focus and consistent help mechanisms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISABILITY TYPES -->
+    <section class="section" aria-labelledby="types-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Who We Design For</span>
+          <h2 id="types-heading">Types of Disabilities</h2>
+          <p>Accessibility covers a spectrum of disabilities, each with unique design considerations.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">👁️</div>
+            <h3>Visual</h3>
+            <p>Includes blindness, low vision, and color blindness. Users may rely on screen readers, magnification software, or high-contrast modes. Solutions: alt text, semantic HTML, sufficient contrast, scalable text.</p>
+          </article>
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">👂</div>
+            <h3>Auditory</h3>
+            <p>Includes deafness and hearing impairment. Users cannot rely on audio. Solutions: captions for video, transcripts for audio, visual alternatives to audio cues.</p>
+          </article>
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">🖐️</div>
+            <h3>Motor</h3>
+            <p>Includes conditions affecting fine motor control, such as tremors, paralysis, or repetitive strain. Users may use keyboard only, switch access, or eye-tracking. Solutions: keyboard navigation, large targets, no time limits.</p>
+          </article>
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">🧠</div>
+            <h3>Cognitive</h3>
+            <p>Includes dyslexia, ADHD, autism, and memory impairments. Users benefit from clear language, consistent layouts, and minimal distractions. Solutions: plain language, predictable navigation, sufficient time.</p>
+          </article>
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">🗣️</div>
+            <h3>Speech</h3>
+            <p>Affects voice input and output. Users may rely on text-based communication. Solutions: ensure voice input is not the only interaction method; provide text-based alternatives to all voice interfaces.</p>
+          </article>
+          <article class="card fade-in">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Situational</h3>
+            <p>Temporary or situational disabilities affect everyone: a broken arm, bright sunlight, noisy environment, or slow internet. Accessible design benefits all users in all contexts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMON ISSUES -->
+    <section class="section bg-gray" aria-labelledby="issues-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Common Problems & Fixes</span>
+          <h2 id="issues-heading">Top Accessibility Failures</h2>
+          <p>According to WebAIM's Million Report, these are the most common WCAG failures found on the web's top million pages.</p>
+        </div>
+        <div class="issue-list fade-in">
+
+          <div class="issue-item">
+            <div class="issue-badge bad" aria-hidden="true">🚫</div>
+            <div>
+              <h3>Missing Alt Text on Images</h3>
+              <p>Screen readers skip images with no alt attribute, leaving blind users without context. Decorative images should use <code>alt=""</code>; informative images need descriptive text.</p>
+              <span class="fix-tag">Fix: alt="Descriptive text" or alt="" for decorative</span>
+            </div>
+          </div>
+
+          <div class="issue-item">
+            <div class="issue-badge bad" aria-hidden="true">🚫</div>
+            <div>
+              <h3>Insufficient Color Contrast</h3>
+              <p>Light gray text on white background fails WCAG 1.4.3. Affects users with low vision, older users, and anyone in bright sunlight. Minimum ratio: 4.5:1 for normal text.</p>
+              <span class="fix-tag">Fix: Use a contrast checker; minimum 4.5:1 ratio</span>
+            </div>
+          </div>
+
+          <div class="issue-item">
+            <div class="issue-badge bad" aria-hidden="true">🚫</div>
+            <div>
+              <h3>Empty or Missing Form Labels</h3>
+              <p>Forms with only placeholder text — or labels not programmatically associated with inputs — prevent screen readers from identifying field purpose when focused.</p>
+              <span class="fix-tag">Fix: &lt;label for="id"&gt; linked to &lt;input id="id"&gt;</span>
+            </div>
+          </div>
+
+          <div class="issue-item">
+            <div class="issue-badge bad" aria-hidden="true">🚫</div>
+            <div>
+              <h3>No Visible Focus Indicator</h3>
+              <p>CSS that removes the default focus outline (<code>outline: none</code>) makes keyboard navigation impossible for sighted users who tab through pages.</p>
+              <span class="fix-tag">Fix: Never remove :focus styles; design a custom visible indicator</span>
+            </div>
+          </div>
+
+          <div class="issue-item">
+            <div class="issue-badge bad" aria-hidden="true">🚫</div>
+            <div>
+              <h3>Empty Link Text</h3>
+              <p>Links with only an icon, image, or "Click here" text provide no context for screen reader users navigating a list of links on a page.</p>
+              <span class="fix-tag">Fix: Descriptive link text or aria-label on icon links</span>
+            </div>
+          </div>
+
+          <div class="issue-item">
+            <div class="issue-badge bad" aria-hidden="true">🚫</div>
+            <div>
+              <h3>Missing Document Language</h3>
+              <p>Without <code>lang</code> on the <code>&lt;html&gt;</code> element, screen readers may use the wrong voice profile, mispronouncing words and confusing users.</p>
+              <span class="fix-tag">Fix: &lt;html lang="en"&gt;</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-label="Call to action">
+      <div class="text-center container fade-in">
+        <h2>Put Your Knowledge to the Test</h2>
+        <p style="max-width:500px;margin:0 auto 2rem;color:var(--gray-600);">See if you can identify accessible vs. inaccessible patterns in our interactive quiz.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="accessibility-experiences.html" class="btn btn-primary btn-lg">Play the Game 🎮</a>
+          <a href="resources.html" class="btn btn-navy btn-lg">View Resources →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility">
+          <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+          <div class="nav-logo-text">Digital <span>Accessibility</span></div>
+        </a>
+        <p>An interactive learning platform built by UCF students to promote digital inclusion and WCAG compliance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Standards</h4>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener">WCAG 2.2 Quick Ref</a></li>
+          <li><a href="https://webaim.org/" target="_blank" rel="noopener">WebAIM</a></li>
+          <li><a href="https://www.ada.gov/" target="_blank" rel="noopener">ADA.gov</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 UCF Digital Accessibility.</span>
+      <span>Made with ♿ at <a href="https://www.ucf.edu" target="_blank" rel="noopener">University of Central Florida</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

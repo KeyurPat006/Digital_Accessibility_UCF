@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact the UCF Digital Accessibility team with questions, feedback, or accessibility inquiries." />
+  <title>Contact — UCF Digital Accessibility</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♿</text></svg>" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility Home">
+        <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+        <div class="nav-logo-text">Digital<br><span>Accessibility</span></div>
+      </a>
+      <nav role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-header">
+      <div class="page-header-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Contact</span>
+        </nav>
+        <h1>Get in <em>Touch</em></h1>
+        <p>Questions about accessibility, feedback on our platform, or want to collaborate? We'd love to hear from you.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <span class="section-eyebrow">Contact Us</span>
+            <h2 id="contact-heading" style="text-align:left;margin-top:.25rem;">Let's Connect</h2>
+            <p style="color:var(--gray-600);">Whether you're a student, developer, or educator, we want to support your accessibility journey. Fill out the form and we'll respond within 2–3 business days.</p>
+
+            <div class="contact-info-items">
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Location</strong>
+                  <span>University of Central Florida<br>4000 Central Florida Blvd, Orlando, FL 32816</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <span>accessibility@ucf.edu</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">🕐</div>
+                <div>
+                  <strong>Response Time</strong>
+                  <span>2–3 business days</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">♿</div>
+                <div>
+                  <strong>Accessibility Support</strong>
+                  <span>Need help with digital accessibility at UCF? Contact UCF IT at <a href="mailto:accessibility@ucf.edu" style="color:var(--navy);font-weight:600;">accessibility@ucf.edu</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card fade-in">
+
+            <!-- Form -->
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span aria-hidden="true" style="color:var(--error);">*</span></label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    autocomplete="given-name"
+                    required
+                    aria-required="true"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span aria-hidden="true" style="color:var(--error);">*</span></label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    autocomplete="family-name"
+                    required
+                    aria-required="true"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" style="color:var(--error);">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  placeholder="jane.doe@knights.ucf.edu"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="role">Your Role</label>
+                <select id="role" name="role">
+                  <option value="">Select your role…</option>
+                  <option value="student">Student</option>
+                  <option value="developer">Developer / Designer</option>
+                  <option value="educator">Educator</option>
+                  <option value="researcher">Researcher</option>
+                  <option value="professional">Accessibility Professional</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span aria-hidden="true" style="color:var(--error);">*</span></label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  aria-required="true"
+                  placeholder="e.g. Question about WCAG 2.2"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true" style="color:var(--error);">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  aria-required="true"
+                  placeholder="Tell us what you'd like to know or share…"
+                  aria-describedby="message-hint"
+                ></textarea>
+                <p id="message-hint" style="font-size:.75rem;color:var(--gray-600);margin-top:.35rem;">Please be as detailed as possible so we can give you the best response.</p>
+              </div>
+
+              <div class="form-group" style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:1.75rem;">
+                <input
+                  type="checkbox"
+                  id="subscribe"
+                  name="subscribe"
+                  style="width:18px;height:18px;margin-top:.2rem;accent-color:var(--navy);flex-shrink:0;cursor:pointer;"
+                />
+                <label for="subscribe" style="font-size:.85rem;font-weight:400;cursor:pointer;">
+                  I'd like to receive occasional updates about accessibility resources and new features on this platform.
+                </label>
+              </div>
+
+              <p style="font-size:.75rem;color:var(--gray-600);margin-bottom:1.25rem;">
+                <span aria-hidden="true" style="color:var(--error);">*</span> Required fields
+              </p>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:.9rem;" aria-label="Send your message">
+                Send Message ✉️
+              </button>
+            </form>
+
+            <!-- Success State -->
+            <div id="form-success" class="form-success" role="alert" aria-live="assertive">
+              <div class="form-success-icon" aria-hidden="true">🎉</div>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. We've received your message and will respond within 2–3 business days.</p>
+              <p style="margin-top:.5rem;">In the meantime, explore our <a href="resources.html" style="color:var(--navy);font-weight:700;text-decoration:underline;">Resources page</a> or challenge yourself with the <a href="accessibility-experiences.html" style="color:var(--navy);font-weight:700;text-decoration:underline;">Interactive Game</a>.</p>
+              <button class="btn btn-navy mt-3" onclick="resetForm()">Send Another Message</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-gray" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+        </div>
+        <div style="max-width:760px;margin:0 auto;display:grid;gap:1.25rem;" class="fade-in">
+
+          <details style="background:var(--white);border:1.5px solid var(--gray-300);border-radius:var(--radius);padding:1.5rem;" open>
+            <summary style="font-weight:700;cursor:pointer;font-size:1rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;" aria-expanded="true">
+              Is this platform affiliated with UCF officially?
+              <span aria-hidden="true" style="color:var(--gold);font-size:1.3rem;">+</span>
+            </summary>
+            <p style="margin-top:1rem;color:var(--gray-600);font-size:.9rem;">This platform was created as an educational project by UCF students to help promote digital accessibility awareness. It is not an official UCF university service.</p>
+          </details>
+
+          <details style="background:var(--white);border:1.5px solid var(--gray-300);border-radius:var(--radius);padding:1.5rem;">
+            <summary style="font-weight:700;cursor:pointer;font-size:1rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              Can I use these resources in my own projects?
+              <span aria-hidden="true" style="color:var(--gold);font-size:1.3rem;">+</span>
+            </summary>
+            <p style="margin-top:1rem;color:var(--gray-600);font-size:.9rem;">Absolutely! All content on this site is educational and freely shareable. We encourage you to spread accessibility awareness. Please credit UCF Digital Accessibility when sharing.</p>
+          </details>
+
+          <details style="background:var(--white);border:1.5px solid var(--gray-300);border-radius:var(--radius);padding:1.5rem;">
+            <summary style="font-weight:700;cursor:pointer;font-size:1rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              How do I report an accessibility issue on this site?
+              <span aria-hidden="true" style="color:var(--gold);font-size:1.3rem;">+</span>
+            </summary>
+            <p style="margin-top:1rem;color:var(--gray-600);font-size:.9rem;">We practice what we preach! If you find an accessibility barrier on this site, please use the contact form above and describe the issue. We take accessibility feedback seriously and will address it promptly.</p>
+          </details>
+
+          <details style="background:var(--white);border:1.5px solid var(--gray-300);border-radius:var(--radius);padding:1.5rem;">
+            <summary style="font-weight:700;cursor:pointer;font-size:1rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              Does WCAG compliance guarantee legal protection?
+              <span aria-hidden="true" style="color:var(--gold);font-size:1.3rem;">+</span>
+            </summary>
+            <p style="margin-top:1rem;color:var(--gray-600);font-size:.9rem;">WCAG compliance significantly reduces legal risk and is referenced in most ADA lawsuits as the standard benchmark. However, it is not a legal safe harbor by itself. We recommend consulting an accessibility attorney for formal legal guidance.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility">
+          <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+          <div class="nav-logo-text">Digital <span>Accessibility</span></div>
+        </a>
+        <p>An interactive learning platform built by UCF students to promote digital inclusion and WCAG compliance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UCF Links</h4>
+        <ul>
+          <li><a href="https://www.ucf.edu" target="_blank" rel="noopener">UCF Main Site</a></li>
+          <li><a href="https://accessibility.ucf.edu" target="_blank" rel="noopener">UCF Accessibility</a></li>
+          <li><a href="https://www.ucf.edu/accessibility/" target="_blank" rel="noopener">IT Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 UCF Digital Accessibility.</span>
+      <span>Made with ♿ at <a href="https://www.ucf.edu" target="_blank" rel="noopener">University of Central Florida</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function resetForm() {
+      const form = document.getElementById('contact-form');
+      const success = document.getElementById('form-success');
+      if (form && success) {
+        form.reset();
+        form.style.display = 'block';
+        success.classList.remove('show');
+        form.querySelector('input').focus();
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the best tools, guides, and resources for testing and improving web accessibility — including WAVE, Axe, Lighthouse, and more." />
+  <title>Resources & Tools — UCF Digital Accessibility</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♿</text></svg>" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility Home">
+        <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+        <div class="nav-logo-text">Digital<br><span>Accessibility</span></div>
+      </a>
+      <nav role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-header">
+      <div class="page-header-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Resources</span>
+        </nav>
+        <h1>Resources <em>&amp; Tools</em></h1>
+        <p>Everything you need to audit, fix, and build accessible web experiences — from automated checkers to expert guides.</p>
+      </div>
+    </div>
+
+    <!-- TESTING TOOLS -->
+    <section class="section" aria-labelledby="tools-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Automated Testing</span>
+          <h2 id="tools-heading">Accessibility Testing Tools</h2>
+          <p>These tools help you identify accessibility issues automatically. Remember: automated testing catches ~30–40% of issues — manual testing is still essential.</p>
+        </div>
+        <div class="resource-grid fade-in">
+
+          <article class="resource-card" aria-label="WAVE Web Accessibility Evaluator">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🌊</div>
+              <div>
+                <span class="resource-tag">Browser Extension + Web</span>
+                <h3 style="margin:0;">WAVE</h3>
+              </div>
+            </div>
+            <p>WebAIM's free visual accessibility checker highlights errors, warnings, and structural elements directly on the page. Perfect for beginners and quick audits.</p>
+            <a href="https://wave.webaim.org/" target="_blank" rel="noopener" class="resource-link" aria-label="Visit WAVE accessibility evaluator (opens in new tab)">
+              Visit WAVE →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="axe DevTools">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🪓</div>
+              <div>
+                <span class="resource-tag">Browser DevTools</span>
+                <h3 style="margin:0;">axe DevTools</h3>
+              </div>
+            </div>
+            <p>Deque's axe engine powers the industry-standard browser extension and integrates into CI/CD pipelines. Trusted by Microsoft, Google, and thousands of dev teams worldwide.</p>
+            <a href="https://www.deque.com/axe/devtools/" target="_blank" rel="noopener" class="resource-link" aria-label="Visit axe DevTools (opens in new tab)">
+              Visit axe →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="Google Lighthouse">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🔦</div>
+              <div>
+                <span class="resource-tag">Built into Chrome</span>
+                <h3 style="margin:0;">Google Lighthouse</h3>
+              </div>
+            </div>
+            <p>Built directly into Chrome DevTools, Lighthouse provides an accessibility score and actionable audit results alongside performance, SEO, and best practices checks.</p>
+            <a href="https://developer.chrome.com/docs/lighthouse/accessibility/" target="_blank" rel="noopener" class="resource-link" aria-label="View Lighthouse accessibility docs (opens in new tab)">
+              View Docs →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="Colour Contrast Analyser">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🎨</div>
+              <div>
+                <span class="resource-tag">Desktop App</span>
+                <h3 style="margin:0;">Colour Contrast Analyser</h3>
+              </div>
+            </div>
+            <p>TPGi's free desktop tool checks contrast ratios for any color combination on your screen, simulates color blindness, and helps you pick WCAG-compliant palettes.</p>
+            <a href="https://www.tpgi.com/color-contrast-checker/" target="_blank" rel="noopener" class="resource-link" aria-label="Download Colour Contrast Analyser (opens in new tab)">
+              Download Free →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="Accessibility Insights">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🔍</div>
+              <div>
+                <span class="resource-tag">Browser Extension</span>
+                <h3 style="margin:0;">Accessibility Insights</h3>
+              </div>
+            </div>
+            <p>Microsoft's free tool offers both fast automated checks and guided manual walkthroughs, including a tab stops visualizer and color contrast analyzer built in.</p>
+            <a href="https://accessibilityinsights.io/" target="_blank" rel="noopener" class="resource-link" aria-label="Visit Accessibility Insights (opens in new tab)">
+              Get the Tool →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="NVDA Screen Reader">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">📢</div>
+              <div>
+                <span class="resource-tag">Screen Reader</span>
+                <h3 style="margin:0;">NVDA Screen Reader</h3>
+              </div>
+            </div>
+            <p>The most widely used free, open-source screen reader for Windows. Testing with NVDA is essential for ensuring your site works for blind and low-vision users.</p>
+            <a href="https://www.nvaccess.org/" target="_blank" rel="noopener" class="resource-link" aria-label="Download NVDA Screen Reader (opens in new tab)">
+              Download NVDA →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING RESOURCES -->
+    <section class="section bg-gray" aria-labelledby="learning-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow">Documentation & Guides</span>
+          <h2 id="learning-heading">Learn Accessibility</h2>
+          <p>From official W3C specifications to practical developer tutorials — start your accessibility education here.</p>
+        </div>
+        <div class="resource-grid fade-in">
+
+          <article class="resource-card" aria-label="WCAG 2.2 Quick Reference">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">📋</div>
+              <div>
+                <span class="resource-tag">Official Standard</span>
+                <h3 style="margin:0;">WCAG 2.2 Quick Reference</h3>
+              </div>
+            </div>
+            <p>The definitive, filterable WCAG 2.2 success criteria reference from W3C. Bookmark this as your go-to guide when you need to check specific requirements.</p>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener" class="resource-link" aria-label="View WCAG 2.2 Quick Reference (opens in new tab)">
+              Open Reference →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="WebAIM Articles and Tutorials">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🎓</div>
+              <div>
+                <span class="resource-tag">Tutorials</span>
+                <h3 style="margin:0;">WebAIM Articles</h3>
+              </div>
+            </div>
+            <p>WebAIM publishes some of the best practical accessibility tutorials on the web, covering screen readers, cognitive disabilities, color blindness simulations, and more.</p>
+            <a href="https://webaim.org/articles/" target="_blank" rel="noopener" class="resource-link" aria-label="Read WebAIM articles (opens in new tab)">
+              Browse Articles →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="MDN Accessibility Docs">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🦊</div>
+              <div>
+                <span class="resource-tag">Developer Docs</span>
+                <h3 style="margin:0;">MDN Accessibility</h3>
+              </div>
+            </div>
+            <p>Mozilla's MDN Web Docs has comprehensive, developer-friendly accessibility documentation including ARIA guides, keyboard handling patterns, and best-practice code examples.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" target="_blank" rel="noopener" class="resource-link" aria-label="Read MDN Accessibility docs (opens in new tab)">
+              Read MDN Docs →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="ARIA Authoring Practices Guide">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🧩</div>
+              <div>
+                <span class="resource-tag">Pattern Library</span>
+                <h3 style="margin:0;">ARIA Authoring Practices</h3>
+              </div>
+            </div>
+            <p>W3C's APG provides accessible design patterns and code examples for common UI components — dialogs, menus, tabs, sliders — with keyboard interaction specifications.</p>
+            <a href="https://www.w3.org/WAI/ARIA/apg/" target="_blank" rel="noopener" class="resource-link" aria-label="Visit ARIA Authoring Practices Guide (opens in new tab)">
+              Explore Patterns →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="Google's web.dev accessibility guides">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🟢</div>
+              <div>
+                <span class="resource-tag">Course</span>
+                <h3 style="margin:0;">web.dev Accessibility</h3>
+              </div>
+            </div>
+            <p>Google's free web.dev platform offers a structured accessibility learning path covering semantic HTML, ARIA, focus management, and testing with real code examples.</p>
+            <a href="https://web.dev/learn/accessibility" target="_blank" rel="noopener" class="resource-link" aria-label="Take web.dev accessibility course (opens in new tab)">
+              Start Course →
+            </a>
+          </article>
+
+          <article class="resource-card" aria-label="Deque University free content">
+            <div class="resource-card-header">
+              <div class="resource-icon" aria-hidden="true">🏫</div>
+              <div>
+                <span class="resource-tag">Free Training</span>
+                <h3 style="margin:0;">Deque University</h3>
+              </div>
+            </div>
+            <p>Deque offers free accessibility training modules covering screen readers, ARIA, and keyboard navigation fundamentals, along with paid professional certification courses.</p>
+            <a href="https://dequeuniversity.com/" target="_blank" rel="noopener" class="resource-link" aria-label="Visit Deque University (opens in new tab)">
+              Explore Training →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK TIPS -->
+    <section class="section bg-navy" aria-labelledby="tips-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow" style="color:var(--gold);">Quick Wins</span>
+          <h2 id="tips-heading" style="color:var(--white);">Accessibility Checklist</h2>
+          <p>Apply these high-impact fixes to immediately improve your site's accessibility score.</p>
+        </div>
+        <div style="max-width:800px;margin:0 auto;display:grid;gap:1rem;" class="fade-in" role="list" aria-label="Accessibility checklist">
+          <div role="listitem" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+            <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">✓</span>
+            <div><strong style="color:var(--white);display:block;">Add lang attribute to &lt;html&gt;</strong><span style="color:rgba(255,255,255,.6);font-size:.85rem;">Enables screen readers to use the correct voice profile and pronunciation</span></div>
+          </div>
+          <div role="listitem" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+            <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">✓</span>
+            <div><strong style="color:var(--white);display:block;">Write descriptive alt text for all images</strong><span style="color:rgba(255,255,255,.6);font-size:.85rem;">Describe what the image shows and why it matters; use alt="" for decorative images</span></div>
+          </div>
+          <div role="listitem" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+            <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">✓</span>
+            <div><strong style="color:var(--white);display:block;">Ensure 4.5:1 color contrast ratio</strong><span style="color:rgba(255,255,255,.6);font-size:.85rem;">Use a contrast checker; dark navy on white is a reliable combination</span></div>
+          </div>
+          <div role="listitem" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+            <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">✓</span>
+            <div><strong style="color:var(--white);display:block;">Associate all form labels with inputs</strong><span style="color:rgba(255,255,255,.6);font-size:.85rem;">Use &lt;label for="id"&gt; matched to &lt;input id="id"&gt; — never rely on placeholder only</span></div>
+          </div>
+          <div role="listitem" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+            <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">✓</span>
+            <div><strong style="color:var(--white);display:block;">Add a visible focus indicator</strong><span style="color:rgba(255,255,255,.6);font-size:.85rem;">Never remove :focus styles; customize with your brand colors for a consistent look</span></div>
+          </div>
+          <div role="listitem" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+            <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">✓</span>
+            <div><strong style="color:var(--white);display:block;">Add a skip navigation link</strong><span style="color:rgba(255,255,255,.6);font-size:.85rem;">A "Skip to main content" link at the top lets keyboard users bypass repeated navigation</span></div>
+          </div>
+          <div role="listitem" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;">
+            <span style="color:var(--gold);font-size:1.25rem;" aria-hidden="true">✓</span>
+            <div><strong style="color:var(--white);display:block;">Use semantic HTML elements</strong><span style="color:rgba(255,255,255,.6);font-size:.85rem;">&lt;nav&gt;, &lt;main&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;article&gt; create landmark regions for screen readers</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-label="Call to action">
+      <div class="text-center container fade-in">
+        <h2>Test Your Accessibility Knowledge</h2>
+        <p style="max-width:480px;margin:0 auto 2rem;color:var(--gray-600);">See how much you've learned by taking our interactive accessibility quiz.</p>
+        <a href="accessibility-experiences.html" class="btn btn-primary btn-lg">Play the Game 🎮</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="UCF Digital Accessibility">
+          <div class="nav-logo-icon" aria-hidden="true">UCF</div>
+          <div class="nav-logo-text">Digital <span>Accessibility</span></div>
+        </a>
+        <p>An interactive learning platform built by UCF students to promote digital inclusion and WCAG compliance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="accessibility-experiences.html">Interactive Game</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a></li>
+          <li><a href="https://www.deque.com/axe/" target="_blank" rel="noopener">axe DevTools</a></li>
+          <li><a href="https://accessibilityinsights.io/" target="_blank" rel="noopener">Accessibility Insights</a></li>
+          <li><a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noopener">Lighthouse</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 UCF Digital Accessibility.</span>
+      <span>Made with ♿ at <a href="https://www.ucf.edu" target="_blank" rel="noopener">University of Central Florida</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
